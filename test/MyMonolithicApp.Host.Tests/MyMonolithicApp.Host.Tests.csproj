@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <IsPackable>false</IsPackable>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoFixture" Version="4.17.*" />
+    <PackageReference Include="FluentAssertions" Version="5.10.*" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.10.*" />
+    <PackageReference Include="MELT.xUnit" Version="0.8.*" />    
+    <PackageReference Include="Moq" Version="4.16.*" />
+    <PackageReference Include="xunit" Version="2.4.*" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.*">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\MyMonolithicApp.Host\MyMonolithicApp.Host.csproj" />
+  </ItemGroup>
+
+</Project>

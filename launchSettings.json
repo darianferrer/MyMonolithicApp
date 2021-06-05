@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "serviceActions": {
+        "mymonolithicapp.database": "StartWithoutDebugging",
+        "mymonolithicapp.host": "StartWithoutDebugging"
+      },
+      "commandVersion": "1.0"
+    }
+  }
+}
