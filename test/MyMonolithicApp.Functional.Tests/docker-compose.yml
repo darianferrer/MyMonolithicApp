@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+  webapi:
+    build:
+      context: ../../../../../
+      dockerfile: src/MyMonolithicApp.Host/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: 'https://+:443;http://+:80'
+      ConnectionStrings__DefaultConnection: 'Server=webapi_database,1433;Database=MyMonolithicApp;User ID=sa;Password=Abcd*1234;'
+    ports:
+      - "7000:80"
+      - "7001:443"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+    depends_on:
+      - webapi_database
+  webapi_database:
+    build:
+      context: .
+      dockerfile: Setup/Dockerfile
+    environment:
+      - "MSSQL_PID=Express"
+      - "SA_PASSWORD=Abcd*1234"
+      - "ACCEPT_EULA=Y"

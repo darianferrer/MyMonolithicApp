@@ -42,6 +42,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyMonolithicApp.Infrastruct
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A303E91C-651F-4895-97E0-42A8183455AC}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyMonolithicApp.Functional.Tests", "test\MyMonolithicApp.Functional.Tests\MyMonolithicApp.Functional.Tests.csproj", "{BA2781B2-0636-415F-88F7-6E2DA8A32A69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -96,6 +98,10 @@ Global
 		{A303E91C-651F-4895-97E0-42A8183455AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A303E91C-651F-4895-97E0-42A8183455AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A303E91C-651F-4895-97E0-42A8183455AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA2781B2-0636-415F-88F7-6E2DA8A32A69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA2781B2-0636-415F-88F7-6E2DA8A32A69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA2781B2-0636-415F-88F7-6E2DA8A32A69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA2781B2-0636-415F-88F7-6E2DA8A32A69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -112,6 +118,7 @@ Global
 		{B2A71412-70F6-45FE-A80A-6FA5DB64E243} = {16388144-64A2-4B1D-A611-FD9F9A4EBE21}
 		{BC59671F-D28B-45D6-96FD-7FF7B66035FF} = {F334A404-8D1B-45AA-8D50-98366DD016D0}
 		{6CC12794-7ACF-4E89-BE79-8F3AF15AEA60} = {F334A404-8D1B-45AA-8D50-98366DD016D0}
+		{BA2781B2-0636-415F-88F7-6E2DA8A32A69} = {F334A404-8D1B-45AA-8D50-98366DD016D0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EC84644C-FD27-41C6-B320-2B538C184209}
